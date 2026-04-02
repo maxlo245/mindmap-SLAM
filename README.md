@@ -2,6 +2,7 @@
 
 > Synthèse interactive des notions clés RGPD et Cybersécurité - Développée pour le BTS SIO SLAM.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maxlo245/mindmap-SLAM)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://maxlo245.github.io/mindmap-SLAM/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
@@ -43,10 +44,29 @@ La mindmap couvre les thèmes suivants :
 mindmap-SLAM/
 ├── index.html           # Point d'entrée (redirect)
 ├── rgpd-mindmap.html    # Application principale
+├── vercel.json          # Config déploiement Vercel
 ├── README.md
 ├── LICENSE
 └── .gitignore
 ```
+
+## 🚀 Déploiement Vercel
+
+### Option 1 — Vercel CLI (recommandé)
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+### Option 2 — Vercel Dashboard (sans code)
+1. Aller sur [vercel.com/new](https://vercel.com/new)
+2. Importer le repo GitHub `maxlo245/mindmap-SLAM`
+3. Cliquer **Deploy** — aucune configuration requise
+
+> La racine `/` redirige automatiquement vers `rgpd-mindmap.html` via `vercel.json`.  
+> Headers de sécurité (CSP, XSS, HSTS) activés par défaut.
+
+---
 
 ## 🖥️ Utilisation locale
 
